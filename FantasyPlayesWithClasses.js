@@ -48,16 +48,19 @@ const dwarf2=new Dwarf("Jack","artisan","dwarf");
 
 orc1.greeting();
 orc1.whatIsYourRace();
+
 orc2.greeting();
 orc2.whatIsYourRace();
 
 darkElf1.greeting();
 darkElf1.whatIsYourRace();
+
 darkElf2.greeting();
 darkElf2.whatIsYourRace();
 
 
 dwarf1.greeting();
 dwarf1.whatIsYourRace();
+
 dwarf2.greeting();
 dwarf2.whatIsYourRace();

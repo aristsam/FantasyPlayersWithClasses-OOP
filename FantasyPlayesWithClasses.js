@@ -5,8 +5,9 @@ class Player {
 		this.race=race;
 	}
 	greeting(){
-		console.log(`Hi my name is  ${this.name} and i am ${this.type}`);
+		console.log(`My name is ${this.name}.`);
 	}
+	
 }
 
 class Orc extends Player {
@@ -15,6 +16,9 @@ class Orc extends Player {
 	}
 	whatIsYourRace(){
 		console.log(`Dont be afraid! i am a green and friendly ${this.race}`);
+	}
+	greeting(){
+		console.log(`Hi my name is  ${this.name} and i am ${this.type}`);
 	}
 }
 
@@ -25,6 +29,9 @@ class DarkElf extends Player {
 	whatIsYourRace(){
 		console.log(`I am ${this.race}.I only attack in the night`);
 	}
+	greeting(){
+		console.log(`Hi my name is  ${this.name} and i am ${this.type}`);
+	}
 }
 
 class Dwarf extends Player {
@@ -33,6 +40,9 @@ class Dwarf extends Player {
 	}
 	whatIsYourRace(){
 		console.log(`Hey ${this.name} is in da house.Definetly, i am ${this.race}.Dont let my height fool you, i can be deadly!`);
+	}
+	greeting(){
+		console.log(`Hi my name is  ${this.name} and i am ${this.type}`);
 	}
 }
 
@@ -45,6 +55,8 @@ const darkElf2=new DarkElf("Mary","fighter","darkElf");
 
 const dwarf1=new Dwarf("Nick","scavenger","dwarf");
 const dwarf2=new Dwarf("Jack","artisan","dwarf");
+
+const pratt=new Player("Pratt");
 
 orc1.greeting();
 orc1.whatIsYourRace();
@@ -64,3 +76,12 @@ dwarf1.whatIsYourRace();
 
 dwarf2.greeting();
 dwarf2.whatIsYourRace();
+
+pratt.greeting();
+
+// // pratt = new Player("Pratt");
+// pratt.greeting(); // 'My name is Pratt.'
+// This feature - when a method has the same name but a different implementation in different classes - is called <<Polymorphism>>.
+// When a method in a subclass replaces the superclass's implementation, we say that the subclass overrides the version in the superclass.
+
+
